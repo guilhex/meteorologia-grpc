@@ -58,16 +58,16 @@ O fluxo de funcionamento do sistema ocorre da seguinte maneira:
 ## Sistema em Funcionamento
 
 **1. Listar Cidades (GET)**
-![Listar Cidades](cidades.PNG)
+![Listar Cidades](cidades.png)
 
 **2. Obter Temperatura Atual (GET)**
-![Temperatura Atual](temperatura.PNG)
+![Temperatura Atual](temperatura.png)
 
 **3. Obter Previsão de 5 dias (GET)**
-![Previsao 5 Dias](previsao.PNG)
+![Previsao 5 Dias](previsao.png)
 
 **4. Obter Estatísticas Climáticas (GET)**
-![Estatisticas](estatisticas.PNG)
+![Estatisticas](estatisticas.png)
 
 **5. Cadastrar Nova Cidade (POST)**
-![Cadastrar Cidade](cadastrar.PNG)
+![Cadastrar Cidade](cadastrar.png)
