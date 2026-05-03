@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "org.example";
+
+service ClimaService {
+  rpc ObterTemperaturaAtual (CidadeRequest) returns (TemperaturaResponse);
+  rpc PrevisaoCincoDias (CidadeRequest) returns (PrevisaoResponse);
+  rpc ListarCidades (VazioRequest) returns (ListaCidadesResponse);
+  rpc CadastrarCidade (NovaCidadeRequest) returns (StatusResponse);
+  rpc EstatisticasClimaticas (CidadeRequest) returns (EstatisticasResponse);
+}
+
+message VazioRequest {}
+
+message CidadeRequest {
+  string nome = 1;
+}
+
+message NovaCidadeRequest {
+  string nome = 1;
+  double temperatura_atual = 2;
+}
+
+message TemperaturaResponse {
+  double temperatura = 1;
+}
+
+message PrevisaoResponse {
+  repeated double temperaturas = 1;
+}
+
+message ListaCidadesResponse {
+  repeated string cidades = 1;
+}
+
+message StatusResponse {
+  string mensagem = 1;
+}
+
+message EstatisticasResponse {
+  double media = 1;
+  double minima = 2;
+  double maxima = 3;
+}
